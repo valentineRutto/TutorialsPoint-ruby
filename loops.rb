@@ -78,6 +78,20 @@ Jumps to next iteration of the most internal loop. Terminates execution of a blo
     end
 Restarts this iteration of the most internal loop, without checking loop condition. Restarts yield or call if called within a block.
         ====retry====
-        syntax : 
-    same as redo
+        syntax:retry
+
+begin
+   do_something # exception raised
+rescue
+   # handles error
+   retry  # restart from beginning
+end
+If retry appears in rescue clause of begin expression, restart from the beginning of the 1begin body.
+        
+for i in 1..5
+   retry if some_condition # restart from i == 1
+end
+        If retry appears in the iterator, the block, or the body of the for expression, restarts the invocation of the iterator call. Arguments to the iterator is re-evaluated.
+
+
     
