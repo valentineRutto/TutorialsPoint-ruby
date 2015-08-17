@@ -38,3 +38,10 @@ you are in the block 100
 you can pass more than one parameters just place the variable inside the pipe to accept the parameters
 yield a, b
 test {|a, b| statement}
+=======BLOCKSnMETHODS======
+    the simplest wat of implementing blocks in a method is this
+
+def test
+  yield
+end
+test{ puts "Hello world"}
