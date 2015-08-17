@@ -45,3 +45,11 @@ def test
   yield
 end
 test{ puts "Hello world"}
+
+=====>
+    if the last argument of the method is preceed by & then u can pass a block to the method
+        
+def test(&block)
+   block.call
+end
+test { puts "Hello World!"}
