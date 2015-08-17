@@ -69,3 +69,15 @@ end
         next
 
 Jumps to next iteration of the most internal loop. Terminates execution of a block if called within a block (with yield or call returning nil).
+        ======redo====
+    syntax:
+    if i<9 then
+        puts("..")
+        redo
+    end
+    end
+Restarts this iteration of the most internal loop, without checking loop condition. Restarts yield or call if called within a block.
+        ====retry====
+        syntax : 
+    same as redo
+    
