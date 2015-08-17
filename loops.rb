@@ -65,3 +65,7 @@ for i in 0..5
    end
    puts "Value of local variable is #{i}"
 end
+    ======next=====
+        next
+
+Jumps to next iteration of the most internal loop. Terminates execution of a block if called within a block (with yield or call returning nil).
