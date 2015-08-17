@@ -32,13 +32,21 @@ end while conditional
                 --->> conditional statement is separated from code with do , /n or ;
                     ==until modifier==
 code until conditional
-
 OR
-
 begin
    code
 end until conditional
-
 Executes code while conditional is false.
-
 If an until modifier follows a begin statement with no rescue or ensure clauses, code is executed once before conditional is evaluated.
+======For=====
+        syntax:
+        for variable [, variable ...] in expression [do]
+   code
+end
+
+Executes code once for each element in expression.
+        eg:
+
+for i in 0..5
+   puts "Value of local variable is #{i}"
+end
