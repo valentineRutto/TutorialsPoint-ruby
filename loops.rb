@@ -54,4 +54,14 @@ end
         works almost like for in loop
             (0..5).each do |i|
    puts "Value of local variable is #{i}"
+            end
+            =====break======
+                terminates the loop or the method block called withing
+                    eg:
+                    
+for i in 0..5
+   if i > 2 then
+      break
+   end
+   puts "Value of local variable is #{i}"
 end
