@@ -23,3 +23,10 @@ end while conditional
                 puts("i love it i= #{$i}")
                 $i+=1
             end while $i<$num
+=====UNTIL======
+                until conditional [do]
+            code
+        end
+            executes code while conditional is false
+                
+                --->> conditional statement is separated from code with do , /n or ;
