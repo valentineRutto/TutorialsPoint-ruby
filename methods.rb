@@ -25,5 +25,11 @@ alias global-variable-name global-variable-name
                     eg:
 alias foo bar
 alias $MATCH $&
-                    foo is alias for bar and match for &
-        
+foo is alias for bar and match for &
+    =====undef====
+                syntax:
+    undef method-name
+        it cancels the method definition,cannot appear inside a method body
+    By using undef and alias, the interface of the class can be modified independently from the superclass
+        eg:
+        undef bar        
