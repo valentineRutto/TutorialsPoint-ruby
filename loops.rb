@@ -30,3 +30,15 @@ end while conditional
             executes code while conditional is false
                 
                 --->> conditional statement is separated from code with do , /n or ;
+                    ==until modifier==
+code until conditional
+
+OR
+
+begin
+   code
+end until conditional
+
+Executes code while conditional is false.
+
+If an until modifier follows a begin statement with no rescue or ensure clauses, code is executed once before conditional is evaluated.
