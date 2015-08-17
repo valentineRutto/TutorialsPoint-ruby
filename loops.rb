@@ -50,3 +50,8 @@ Executes code once for each element in expression.
 for i in 0..5
    puts "Value of local variable is #{i}"
 end
+    ======each=====
+        works almost like for in loop
+            (0..5).each do |i|
+   puts "Value of local variable is #{i}"
+end
