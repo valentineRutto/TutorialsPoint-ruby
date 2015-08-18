@@ -1,0 +1,6 @@
+creating a file and opening it
+/*typed this commands on terminal
+f=File.new("~/myfile.txt","w")
+f.puts("this is my first file")
+f.close*/
+this is my file
