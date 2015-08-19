@@ -1,0 +1,9 @@
+lines = []
+file=File.open("./sample.txt", "r")  /*open file in read only mode*/
+while (line=file.gets)  /*assignin the line to file.gets*/
+lines << line  /*add line to lines array*/
+end
+file.close
+
+lines.each do {|l| puts l} 
+end
